@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik";
+}
+
+body{
+    background-color: hsl(270, 20%, 96%);
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    position: relative;
+    z-index: 1;
+}
+a{
+    text-decoration: none;
+}
+
+.background-gradient{
+    background: linear-gradient(hsl(293, 100%, 63%) -45%, hsl(264, 100%, 61%) );
+    width: 38rem;
+    height: 46rem;
+    border-radius: 0 0 100% 100%;
+    position: absolute;
+    z-index: -1;
+    left: -8rem;
+}
+.background-gradient0 {
+    background: linear-gradient(hsla(293, 100%, 63%, 0.041) -45%, hsla(264, 100%, 61%, 0.041));
+    width: 36rem;
+    height:40rem;
+    border-radius: 100% 100% 0 0;
+    position: absolute;
+    z-index: -1;
+    right: -11rem;
+    bottom: -2rem;
+}
+
+.phone-container{
+    padding: 5rem 19rem 0 25rem;
+    display: grid;
+    grid-template-columns: 25rem 1fr;
+}
+.phone{
+    height: 38rem;
+    width: 18rem;
+    background-color: white;
+    border-radius: 35px;
+    position: relative;
+    padding: .6rem;
+    box-shadow: 0 0px 20px hsla(271, 36%, 24%, 0.241);
+}
+.app{
+    background-color: hsl(270, 20%, 96%);
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    overflow: hidden;
+}
+.app-top-background{
+    width: 100%;
+    height: 13%;
+    background: linear-gradient(to left, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-radius: 0 0 10px 10px;
+}
+.app-top-white-background{
+    width: 55%;
+    height: 30%;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.user-profile{
+    display: flex;
+    padding: .5rem 1rem;
+    column-gap: .5rem;
+}
+
+.user-profile img{
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 100%;
+    border: 2px solid white;
+}
+.profile h2{
+    font-size: .8rem;
+    color: white;
+}
+.profile p{
+    font-size: .6rem;
+    line-height: 1.3;
+    color: hsl(270, 20%, 96%);
+}
+.three-dots{
+    margin-left: auto;
+}
+.user-profile a i{
+    color: white;
+    font-size: .8rem;
+}
+
+/* app body */
+.app-body{
+    padding: .8rem;
+}
+/* chats */
+.first-chat, .second-chat, .sixth-chat{
+    background-color: hsla(264, 100%, 61%, 0.079);
+    width: 70%;
+    padding: .5rem;
+    border-radius: 10px 10px 10px 0;
+}
+.first-chat p , .second-chat p, .sixth-chat p{
+    font-size: .7rem;
+    color: hsl(293, 100%, 63%);
+    line-height: 1.5;
+}
+.second-chat{
+    margin-top: .6rem;
+}
+.third-chat{
+    display: flex;
+    column-gap: .5rem;
+    margin-top: .8rem;
+    justify-content: flex-end;
+}
+.third-chat img{
+    width: 15%;
+    border-radius: 10px;
+}
+.forth-chat, .fifth-chat{
+    margin-left: auto;
+    background-color: white;
+    width: 70%;
+    padding: .5rem;
+    border-radius: 10px 10px 0 10px;
+    margin: .6rem 0 .6rem auto;
+
+}
+.forth-chat p, .fifth-chat p{
+    font-size: .7rem;
+    line-height: 1.5;
+}
+.fifth-chat{
+    width: 45%;
+}
+.sixth-chat{
+margin-top: 1rem;
+}
+/* check buttons */
+.first-check-box, .second-check-box{
+    display: flex;
+    background: linear-gradient(to right, hsl(293, 100%, 63%),hsl(264, 100%, 61%));
+    padding: .6rem;
+    width: 80%;
+    border-radius: 10px 10px 10px 0;
+    margin-top: .6rem;
+    column-gap: .5rem;
+    align-items: center;
+}
+/* customizing radio button */
+label{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 20px;
+}
+input[type="radio"]{
+    opacity: 0;
+}
+.design{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    outline-offset: 3px;
+    outline: 2px solid hsl(289, 100%, 72%);
+    margin-right: 5px;
+}
+input[type="radio"]:checked~.design{
+    outline-color: hsl(289, 100%, 72%);
+    background: white;
+}
+
+.first-check-box h3, .second-check-box h3{
+    margin-left: auto;
+    font-size: .9rem;
+    color: white;
+}
+.first-check-box p, .second-check-box p{
+    font-size: .6rem;
+    color: hsl(270, 20%, 96%);
+}
+
+/* Type message */
+.message{
+    display: flex;
+    background-color: white;
+    margin: .8rem 0;
+    border-radius: 100px;
+    padding: .3rem;
+}
+.message p{
+    font-size: .7rem;
+    padding: .5rem 1.5rem;
+    color: hsl(0, 0%, 60%);
+}
+.message button{
+    margin-left: auto;
+    border-radius: 100%;
+    padding: .2rem;
+    width: 12%;
+    border: none;
+    background-color: hsl(271, 36%, 24%);
+    cursor: pointer;
+}
+.message button i{
+    color: white;
+}
+
+
+/* TEXT CONTAINER  */
+.text-container{
+    padding: 12rem 0 0;
+}
+.text-container h1{
+    color: hsl(271, 36%, 24%);
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding-bottom: 2rem;
+}
+.text-container p{
+    line-height: 1.5;
+    color: hsl(0, 0%, 44%);
+}
+
+
+
+/* footer */
+footer{
+    text-align: center;
+    padding: 2.5rem  2rem 0;
+}
+footer a{
+    color: hsl(264, 100%, 61%);
+}
+footer a:hover{
+    color: hsl(293, 100%, 63%);
+}
